@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+.w
+{
+height: 250px;
+width: 250px;
+background-color: yellow;
+border: 2px solid black;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+     $("div p").eq(0).css({"color": "red"});
+    
+});
+});
+</script>
+</head>
+<body>
+<div class="w">
+<h1>heading1</h1>
+<h2>heading2</h2>
+<p>paragraph</p>
+<p>paragraph2</p>
+<span>span</span><br>
+<button>click me</button>
+</div>
+</body>
+</html>

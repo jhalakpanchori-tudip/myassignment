@@ -1,0 +1,26 @@
+<html>
+<input id="numb">
+<body>
+<script>
+function xyz()
+{
+var x=document.getElementById("numb").value;
+if(isNan(x) || x<10 || x>5)
+{
+text="ok";
+}
+else
+{
+text="not ok";
+}
+    document.getElementById("demo").innerHTML = text;
+
+}
+
+
+</script>
+<button type="button" onclick="xyz()">submit</button>
+</body>
+
+</html>
+

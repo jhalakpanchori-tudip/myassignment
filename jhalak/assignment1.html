@@ -1,0 +1,28 @@
+<html>
+<body>
+<title>Assignment1</title>
+<form>
+name:<input id="pid" type="text" name="fname"/>
+<input type="button" onclick="myfunction()" value="Submit"/>
+</form>
+<script>
+function isEmpty(x){
+	this.y = x;
+        this.newnumber= function()
+        {
+          if(this.y == "" || this.y == null){
+	           return true;
+           }else{
+        	  return false;
+           }
+         };
+}
+
+function myfunction(){
+var x = document.getElementById("pid").value;
+var empty=new isEmpty(x);
+alert(empty.newnumber());
+}
+</script>
+</body>
+</html>

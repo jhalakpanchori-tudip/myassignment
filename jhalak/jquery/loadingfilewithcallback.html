@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+
+#id1
+{
+   width: 250px;
+   height: 250px;
+   background-color: green;
+   border: 2px solid black;
+}
+    #id2
+    {
+     height: 100px;
+     width: 100px;
+     background-color: red;
+     border: 2px solid black;
+     margin: auto;
+     float: right;
+     }
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#id2").load("demo.txt",function(responseTxt,statusTxt,xhr)
+{
+
+        if(statusTxt==success)
+            alert("successful");
+});
+});
+});
+</script>
+</head>
+<body>
+<div id="id1"><div id="id2"></div></div>
+<button>click me</button>
+</body>
+</html>

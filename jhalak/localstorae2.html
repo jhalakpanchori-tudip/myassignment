@@ -1,0 +1,15 @@
+<html>
+<body>
+<div id="demo"></div>
+<script>
+if(typeof(Storage) !== "undefined")
+{
+localStorage.setItem("lastname","panchori");
+document.getElementById("demo").innerHTML=localStorage.getItem("lastname");
+}
+else{
+    document.getElementById("demo").innerHTML="Error";
+}
+</script>
+</body>
+</html>

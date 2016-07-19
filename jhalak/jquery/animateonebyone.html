@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+#para1
+{
+width:50px;
+height: 30px;
+background-color: yellow;
+border: 1px solid black;
+position: relative
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("button").click(function(){
+
+$("#para1").animate({width: '200px',opacity: '0.4',left:'200px'});
+$("#para1").animate({height: '200px',opacity: '0.4',left:'200px'});
+$("#para1").animate({width: 'toggle',opacity: '0.4',left:'200px'});
+$("#para1").animate({height: 'toggle',opacity: '0.4',left:'200px'});
+       
+     
+});
+});
+</script>
+</head>
+<body>
+<button>click me</button><br>
+<div id="para1"></div>
+
+</body>
+</html>

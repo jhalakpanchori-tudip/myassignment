@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1>HEADING</h1>
+<button type="button" onclick="xyz()">Click me</button>
+<p id="demo"></p>
+<script>
+function xyz()
+{
+var hr=new XMLHttpRequest();
+hr.onreadystatechange = function(){
+if(hr.readyState == 4 && hr.status == 200)
+{
+document.getELementById("demo").innerHTML=hr.responseText;
+}
+};
+hr.open("GET","Untitled Document 2.xml",true);
+hr.send(;
+}
+</script>
+</body>
+</html>

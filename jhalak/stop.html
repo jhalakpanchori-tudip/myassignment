@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+.id1
+{
+width: 200px;
+height: 400px;
+background-color: green;
+border: 2px solid red;
+display: none;
+}
+</style>
+
+
+<script>
+
+$(document).ready(function(){
+    $("button").click(function(){
+       $(".id1").fadeIn();
+});
+    $("#bt1").click(function(){
+         $(".id1").stop();
+});
+});
+</script>
+</head>
+<body>
+<h1> hEADiNg</h1>
+<p class="id1"></p>
+<button>click me</button>
+<button id ="bt1">stop me</button>
+</body>
+</html>

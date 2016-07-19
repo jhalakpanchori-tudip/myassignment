@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1>HEading</h1>
+<p id="demo"></p>
+<button type="id" onclick="xyz()"></button>
+<script>
+function xyz()
+{
+var hr=new XMLHttprequest();
+hr.onreadystatechange = function(){
+if(hr.readystate == 4 && hr.status == 200)
+{
+document.getElementById("demo").innerHTML=hrresponseText;
+}
+};
+hr.open("GET","Untitled Document.txt",true);
+hr.send();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+#para0
+{
+width:50px;
+height: 30px;
+background-color: yellow;
+border: 1px solid black;
+}
+#para1
+{
+width:50px;
+height: 30px;
+background-color: yellow;
+border: 1px solid black;
+/*display: none;*/
+}
+#para2
+{
+width:50px;
+height: 30px;
+background-color: red;
+border: 1px solid black;
+/*display: none;*/
+}
+#para3
+{
+width:50px;
+height: 30px;
+background-color: orange;
+border: 1px solid black;
+/*display: none;*/
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("#para0").click(function(){
+
+
+ $("#para1").fadeTo("slow",0.1);
+       $("#para2").fadeTo("slow",0.4);
+           $("#para3").fadeTo("slow",0.6);
+  
+
+
+
+
+ //$("#para1").fadeToggle(1000);
+     //  $("#para2").fadeToggle(2000);
+   //        $("#para3").fadeToggle(3000);
+  
+
+
+  //   $("#para1").fadeOut(1000);
+    //   $("#para2").fadeOut(2000);
+      //     $("#para3").fadeOut(3000);
+  
+    // $("#para1").fadeIn(1000);
+      // $("#para2").fadeIn(2000);
+        //   $("#para3").fadeIn(3000);
+        
+     
+});
+});
+</script>
+</head>
+<body>
+<div id="para0">click me</br>
+<div id="para1"></div><br>
+
+<div id="para2"></div><br>
+
+<div id="para3"></div>
+
+</body>
+</html>

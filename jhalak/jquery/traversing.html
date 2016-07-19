@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+/*p{
+border:1px solid green;
+}*/
+span
+{
+border: 1px solid green;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+         $("span").parent().css({"border": "1px solid red"});
+        //$("p").children().css({"color":"red"});
+});
+});
+</script>
+</head>
+<body>
+<p>hrtrtr<span>jhakla</span><br>jhalak</p>
+<button>click me</button>
+</body>
+</html>

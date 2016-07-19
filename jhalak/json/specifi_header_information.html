@@ -1,0 +1,23 @@
+<html>
+<body>
+<h1>HEADING</h2>
+<p id="demo">hiiii</p>
+<button type="button" onclick="loadDoc()">CLICK ME</button>
+<script>
+ function loadDoc()
+{
+var hr=new XMLHttpRequest()
+hr.onreadystatechange = function()
+{
+if(hr.readyState==4 && hr.status==200)
+{
+        document.getElementById("demo").innerHTML=hr.getResponseHeader('Last-Modified');
+}
+};
+hr.open("GET","ajax.txt",true);
+hr.send();
+
+}
+</script>
+</body>
+</html>

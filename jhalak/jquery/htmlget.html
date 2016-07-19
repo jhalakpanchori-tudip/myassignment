@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+   alert($("#test").html());
+});
+ $("#b2").click(function(){
+     alert($("#test").text());
+});
+  $("#b3").click(function(){
+      alert($("#demo").attr("href"));
+});
+});
+</script>
+</head>
+<body>
+<p id="test"><a href="www.google.com" id="demo">GOOGLE</a>jhalak <b>jhalak</b></p>
+<button id="b1">click text</button>
+<button id="b2">click htmll</button>
+<button id="b3">click attr</button>
+</body>
+</html>

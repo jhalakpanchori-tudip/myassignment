@@ -1,0 +1,17 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+function myfunction(fname,lname,age)
+{
+this.first=fname;
+this.last=lname;
+this.age=age;
+}
+var person=new myfunction("jhalak","panchori",20);
+var person1=new myfunction("palak","panchori",20);
+document.getElementById("demo").innerHTML=person.first+" "+person1.last;
+</script>
+</body>
+</html>
+

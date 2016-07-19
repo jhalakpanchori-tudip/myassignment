@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.w
+{
+height: 250px;
+width: 250px;
+background-color: yellow;
+border: 2px solid black;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+     $("p").siblings().css({"color": "red"});
+      //$("p").siblings("h1").css({"color": "red"});
+    // $("p").next().css({"color": "red"});
+     //$("p").nextAll().css({"color": "red"});
+       //$("p").prev().css({"color": "red"});
+    //$("p").prevAll().css({"color": "red"});
+      
+});
+});
+</script>
+</head>
+<body>
+<div class="w">
+<h1>heading1</h1>
+<h2>heading2</h2>
+<p>paragraph</p>
+<span>span</span><br>
+<button>click me</button>
+</div>
+</body>
+</html>

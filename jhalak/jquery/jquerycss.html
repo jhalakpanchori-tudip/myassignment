@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+.id1
+{
+color: green;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+ $("button").click(function(){
+   $("h1,h2,p").addClass("id1");
+    });
+    $("#button2").click(function(){
+      $("h1,h2,p").removeClass("id1");
+});
+    $("button3").click(function(){
+      $("h1,h2,p").toggle("id1");
+});
+
+});
+</script>
+</head>
+<body>
+<p>heading</p1>
+<h1>heko</h1>
+<h2>hello</h2>
+<button>click me</button>
+<button id="button2">click me to remove</button>
+<button id="button3">click me to toggle</button>
+
+</body>
+</html>
